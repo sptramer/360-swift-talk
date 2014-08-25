@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B8138E4C19A1140100A5212C /* bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8138E4B19A1140100A5212C /* bar.swift */; };
+		B85108AD199FF37D000D44C2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85108AC199FF37D000D44C2 /* main.swift */; };
+		B87DD1B819AA80E9001E5417 /* libfoo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B87DD1B719AA80E9001E5417 /* libfoo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B85108A7199FF37D000D44C2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B8138E3619A1130500A5212C /* libbar.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libbar.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8138E4B19A1140100A5212C /* bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bar.swift; sourceTree = "<group>"; };
+		B84B816519AA784B00FFB2E7 /* foo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = foo.h; path = "../../c-swift-bridge/c-swift-bridge/foo.h"; sourceTree = "<group>"; };
+		B84B816819AA7C6B00FFB2E7 /* swift_c_bridge-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "swift_c_bridge-Bridging-Header.h"; sourceTree = "<group>"; };
+		B85108A9199FF37D000D44C2 /* swift-c-bridge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-c-bridge"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85108AC199FF37D000D44C2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B87DD1B719AA80E9001E5417 /* libfoo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfoo.a; path = "../../../../Library/Developer/Xcode/DerivedData/Bridging-gboxdpelugovmrdnfcrojdqtbugc/Build/Products/Debug/libfoo.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8138E3319A1130500A5212C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B85108A6199FF37D000D44C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B87DD1B819AA80E9001E5417 /* libfoo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8138E3719A1130500A5212C /* libbar */ = {
+			isa = PBXGroup;
+			children = (
+				B8138E4B19A1140100A5212C /* bar.swift */,
+			);
+			path = libbar;
+			sourceTree = "<group>";
+		};
+		B85108A0199FF37D000D44C2 = {
+			isa = PBXGroup;
+			children = (
+				B85108AB199FF37D000D44C2 /* swift-c-bridge */,
+				B8138E3719A1130500A5212C /* libbar */,
+				B85108AA199FF37D000D44C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B85108AA199FF37D000D44C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B85108A9199FF37D000D44C2 /* swift-c-bridge */,
+				B8138E3619A1130500A5212C /* libbar.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B85108AB199FF37D000D44C2 /* swift-c-bridge */ = {
+			isa = PBXGroup;
+			children = (
+				B84B816819AA7C6B00FFB2E7 /* swift_c_bridge-Bridging-Header.h */,
+				B84B816519AA784B00FFB2E7 /* foo.h */,
+				B85108AC199FF37D000D44C2 /* main.swift */,
+				B87DD1B719AA80E9001E5417 /* libfoo.a */,
+			);
+			path = "swift-c-bridge";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B8138E3419A1130500A5212C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B8138E3519A1130500A5212C /* bar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8138E4819A1130500A5212C /* Build configuration list for PBXNativeTarget "bar" */;
+			buildPhases = (
+				B8138E3219A1130500A5212C /* Sources */,
+				B8138E3319A1130500A5212C /* Frameworks */,
+				B8138E3419A1130500A5212C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bar;
+			productName = libbar;
+			productReference = B8138E3619A1130500A5212C /* libbar.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		B85108A8199FF37D000D44C2 /* swift-c-bridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B85108B0199FF37D000D44C2 /* Build configuration list for PBXNativeTarget "swift-c-bridge" */;
+			buildPhases = (
+				B85108A5199FF37D000D44C2 /* Sources */,
+				B85108A6199FF37D000D44C2 /* Frameworks */,
+				B85108A7199FF37D000D44C2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-c-bridge";
+			productName = "swift-c-bridge";
+			productReference = B85108A9199FF37D000D44C2 /* swift-c-bridge */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B85108A1199FF37D000D44C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Millinneal Media, Inc.";
+				TargetAttributes = {
+					B8138E3519A1130500A5212C = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					B85108A8199FF37D000D44C2 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = B85108A4199FF37D000D44C2 /* Build configuration list for PBXProject "swift-c-bridge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B85108A0199FF37D000D44C2;
+			productRefGroup = B85108AA199FF37D000D44C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B85108A8199FF37D000D44C2 /* swift-c-bridge */,
+				B8138E3519A1130500A5212C /* bar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8138E3219A1130500A5212C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8138E4C19A1140100A5212C /* bar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B85108A5199FF37D000D44C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85108AD199FF37D000D44C2 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B8138E4419A1130500A5212C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Bridging-gboxdpelugovmrdnfcrojdqtbugc/Build/Products/Debug",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B8138E4519A1130500A5212C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Bridging-gboxdpelugovmrdnfcrojdqtbugc/Build/Products/Debug",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Release;
+		};
+		B85108AE199FF37D000D44C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B85108AF199FF37D000D44C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B85108B1199FF37D000D44C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"$(srcroot)/../c-swift-bridge/c-swift-bridge/",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Bridging-gboxdpelugovmrdnfcrojdqtbugc/Build/Products/Debug",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-c-bridge/swift_c_bridge-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		B85108B2199FF37D000D44C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"$(srcroot)/../c-swift-bridge/c-swift-bridge/",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Bridging-gboxdpelugovmrdnfcrojdqtbugc/Build/Products/Debug",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-c-bridge/swift_c_bridge-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8138E4819A1130500A5212C /* Build configuration list for PBXNativeTarget "bar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8138E4419A1130500A5212C /* Debug */,
+				B8138E4519A1130500A5212C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B85108A4199FF37D000D44C2 /* Build configuration list for PBXProject "swift-c-bridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85108AE199FF37D000D44C2 /* Debug */,
+				B85108AF199FF37D000D44C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B85108B0199FF37D000D44C2 /* Build configuration list for PBXNativeTarget "swift-c-bridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85108B1199FF37D000D44C2 /* Debug */,
+				B85108B2199FF37D000D44C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B85108A1199FF37D000D44C2 /* Project object */;
+}
